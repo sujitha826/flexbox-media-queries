@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: tan;
+}
+
+/* changes the background-color to bisque if the viewport is 600 pixels wide or wider 
+(if the viewport is less than 600 pixels, the background-color will be tan):*/
+@media screen and (min-width: 600px) {
+    body {
+        background-color: bisque;
+    }
+}
+
+/* if the viewport is at or greater than 800 pixels, the background-color will be blue */
+@media screen and (min-width: 800px) {
+    body {
+        background-color: goldenrod;
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-left {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+/* change the percentage of the flex property of the flex items to create different layouts for 
+different screen sizes.Note that we also have to include flex-wrap: wrap; on the flex container 
+for this example to work:*/
+/* the direction changes when the screen size is 800px (breakpoint)wide or smaller, both flex-items will be aligned in column by taking 100% of flex */
+
+@media (max-width: 800px) {
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
