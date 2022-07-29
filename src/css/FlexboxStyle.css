@@ -3,42 +3,51 @@
 }
 
 body {
-    background-color: tan;
+    background-color: bisque;
 }
 
 /* changes the background-color to bisque if the viewport is 600 pixels wide or wider 
 (if the viewport is less than 600 pixels, the background-color will be tan):*/
-@media screen and (min-width: 600px) {
-    body {
-        background-color: bisque;
-    }
-}
 
 /* if the viewport is at or greater than 800 pixels, the background-color will be blue */
 @media screen and (min-width: 800px) {
     body {
-        background-color: goldenrod;
+        background-color: #f1f1f1;
     }
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
+    justify-content: center;
 }
 
 .flex-item-left {
     background-color: #f1f1f1;
-    padding: 10px;
-    flex: 50%;
+    padding: 40px;
+    flex: 30%;
+    height: 80%;
+}
+
+
+.flex-item-middle {
+    background-color: #f1f1f1;
+    padding: 40px;
+    flex: 30%;
+    height: 80%;
 }
 
 .flex-item-right {
-    background-color: dodgerblue;
-    padding: 10px;
-    flex: 50%;
+    background-color: #f1f1f1;
+    padding: 40px;
+    flex: 30%;
+    height: 80%;
 }
+
+
+
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 /* change the percentage of the flex property of the flex items to create different layouts for 
@@ -48,6 +57,7 @@ for this example to work:*/
 
 @media (max-width: 800px) {
     .flex-item-right,
+    .flex-item-middle,
     .flex-item-left {
         flex: 100%;
     }
