@@ -1,9 +1,9 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: bisque;
+  background-color: bisque;
 }
 
 /* changes the background-color to bisque if the viewport is 600 pixels wide or wider 
@@ -11,39 +11,39 @@ body {
 
 /* if the viewport is at or greater than 800 pixels, the background-color will be blue */
 @media screen and (min-width: 800px) {
-    body {
-        background-color: #f1f1f1;
-    }
+  body {
+    background-color: #f1f1f1;
+  }
 }
 
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 15px;
-    text-align: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  text-align: center;
+  justify-content: center;
 }
 
-.flex-item-left {
-    background-color: #f1f1f1;
-    padding: 40px;
-    flex: 30%;
-    height: 80%;
+.flex-item {
+  background-color: #f1f1f1;
+  padding: 40px;
+  flex: 30%;
+  height: 80%;
 }
 
 
 .flex-item-middle {
-    background-color: #f1f1f1;
-    padding: 40px;
-    flex: 30%;
-    height: 80%;
+  background-color: #f1f1f1;
+  padding: 40px;
+  flex: 30%;
+  height: 80%;
 }
 
 .flex-item-right {
-    background-color: #f1f1f1;
-    padding: 40px;
-    flex: 30%;
-    height: 80%;
+  background-color: #f1f1f1;
+  padding: 40px;
+  flex: 30%;
+  height: 80%;
 }
 
 
@@ -56,11 +56,12 @@ for this example to work:*/
 /* the direction changes when the screen size is 800px (breakpoint)wide or smaller, both flex-items will be aligned in column by taking 100% of flex */
 
 @media (max-width: 800px) {
-    .flex-item-right,
-    .flex-item-middle,
-    .flex-item-left {
-        flex: 100%;
-    }
+
+  .flex-item-right,
+  .flex-item-middle,
+  .flex-item-left {
+    flex: 100%;
+  }
 }
 
 /* Style the top navigation bar */

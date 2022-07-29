@@ -1,26 +1,25 @@
 import React from "react";
 import "../css/MediaStyle.css";
-import withTable from "./HocHeader";
 
-function TableCommon() {
+export default function TableCommon() {
     const json = {
         data: {
             available: {
-                profileOne: {
+                ProfileOne: {
                     a: 14,
                     b: 14,
                     c: 0,
                     d: 0,
                     e: 18
                 },
-                profileTwo: {
+                ProfileTwo: {
                     a: 13,
                     b: 9,
                     c: 0,
                     d: 0,
                     e: 18
                 },
-                profileThree: {
+                ProfileThree: {
                     "a": 12,
                     "b": 12,
                     "c": 0,
@@ -30,7 +29,7 @@ function TableCommon() {
             }
         }
     };
-    
+
     return (
         <div className="wrapper">
             <table className="table-style">
@@ -54,4 +53,3 @@ function TableCommon() {
     );
 }
 
-export default withTable(TableCommon);
