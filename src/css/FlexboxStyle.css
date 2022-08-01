@@ -16,19 +16,23 @@ body {
   }
 }
 
+/* On row(default) flex direction, main axis is horizondal and cross axis is vertical and for column direction , vice versa.*/
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  font-size: 15px;
-  text-align: center;
-  justify-content: center;
+  /* Always align on the cross axis */
+  align-items: center;
+  /* Always align on the main axis */
+  justify-content: space-around;
 }
 
 .flex-item {
   background-color: #f1f1f1;
-  padding: 40px;
-  flex: 30%;
+  padding: 30px;
+  flex: 1;
   height: 80%;
+  width : 300px;
 }
 
 
@@ -47,8 +51,6 @@ body {
 }
 
 
-
-
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 /* change the percentage of the flex property of the flex items to create different layouts for 
 different screen sizes.Note that we also have to include flex-wrap: wrap; on the flex container 
@@ -56,40 +58,7 @@ for this example to work:*/
 /* the direction changes when the screen size is 800px (breakpoint)wide or smaller, both flex-items will be aligned in column by taking 100% of flex */
 
 @media (max-width: 800px) {
-
-  .flex-item-right,
-  .flex-item-middle,
-  .flex-item-left {
+  .flex-item {
     flex: 100%;
-  }
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    float: none;
-    width: 100%;
   }
 }

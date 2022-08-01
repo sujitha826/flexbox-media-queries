@@ -3,15 +3,13 @@ import "../css/MenuLinksStyle.css";
 
 export default function MenuLinks() {
     return (
-        <div><h2>Responsive navigation menu</h2>
-            <p>Resize the browser window to see the effect: When the screen is less than 600px, the navigation menu will be displayed vertically instead of horizontally.</p>
-
-            <div className="topnav">
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+        <div id="navbar"><h2>Welcome to explore the New!!</h2>
+            <div id="topnav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
             </div>
-
         </div>
     );
 }
