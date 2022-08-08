@@ -1,11 +1,11 @@
 import ResponsiveFlex from './components/ResponsiveFlex';
-import MenuLinks from './components/MenuLinks';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <MenuLinks />
+      <Navbar />
       <ResponsiveFlex />
     
     </div>
