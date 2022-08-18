@@ -3,10 +3,8 @@ import MailIcon from '@mui/icons-material/Mail';
 import GridViewIcon from '@mui/icons-material/GridView';
 import GroupIcon from '@mui/icons-material/Group';
 import CollectionsIcon from '@mui/icons-material/Collections';
-import React from 'react';
 
-
-export default SidebarRow = [
+export const SidebarRow = [
     {
         title: "Home",
         icon: <HomeIcon />,
